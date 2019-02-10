@@ -37,7 +37,7 @@ class CoffeeMachine: NSObject {
     }
     
     func add2Milk() {
-        milkInTube += 400
+         milkInTube += 400
     }
     
     func makeAmericano() -> String {
