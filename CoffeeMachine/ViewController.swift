@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         americanoImage()
-        coffeeBeansImage()
+//        coffeeBeansImage()
     }
     
     func americanoImage() {
@@ -86,10 +86,10 @@ class ViewController: UIViewController {
         americanoButton.setBackgroundImage(image, for: .normal)
     }
     
-    func coffeeBeansImage() {
-        let image = UIImage(named: "Beans")
-        coffeeBeans.setBackgroundImage(image, for: .normal)
-    }
-    
+//    func coffeeBeansImage() {
+//        let image = UIImage(named: "Beans")
+//        coffeeBeans.setBackgroundImage(image, for: .normal)
+//    }
+//    
 }
 

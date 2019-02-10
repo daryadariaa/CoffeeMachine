@@ -56,6 +56,7 @@
                                 <rect key="frame" x="220" y="405" width="90" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="coffee"/>
                                 <connections>
                                     <action selector="addCoffee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oM6-aO-N1L"/>
                                 </connections>
