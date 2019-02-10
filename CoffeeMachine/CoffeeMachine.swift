@@ -9,40 +9,82 @@
 import UIKit
 
 class CoffeeMachine: NSObject {
-        
-        //PROPERTIES
-        
-        
-        private let volumeOfWaterTube = 2000
-        private let volumeOfMilkTube = 500
-        var waterInTube = 0
-        var milkInTube = 0
-        var coffeeInFilter = 0
-        
-        
-        func addWater() {
-            waterInTube += 500
+    
+    //PROPERTIES INITIALIZATION
+    
+    var waterInTube: Int
+    var milkInTube: Int
+    var coffeeInFilter: Int
+    init(waterInTube: Int, milkInTube: Int, coffeeInFilter: Int) {
+        self.waterInTube = waterInTube
+        self.milkInTube = milkInTube
+        self.coffeeInFilter = coffeeInFilter
+    }
+    
+    //ACTIONS
+    
+    
+    func addWater() {
+        waterInTube += 500
+    }
+    
+    func addCoffee() {
+        coffeeInFilter += 1
+    }
+    
+    func addMilk() {
+        milkInTube += 200
+    }
+    
+    func add2Milk() {
+        milkInTube += 400
+    }
+    
+    func makeAmericano() -> String {
+        var resultMessage: String = ""
+        if (waterInTube >= 200) && (coffeeInFilter) >= 1 {
+            resultMessage = "Your ☕️ is ready, enjoy!"
         }
-        
-        func addCoffee() {
-            coffeeInFilter += 1
-        }
-        
-        func addMilk() {
-            milkInTube += 200
-        }
-        
-        func makeAmericano() {
-            if (waterInTube >= 500) && (coffeeInFilter) == 1 {
-                print("Your coffee is ready")
+        else {
+            if waterInTube < 200 {
+                resultMessage = "Please, add some water"
             }
-            else {
-                if waterInTube < 500 {
-                    print("Please, add water")
-                }
-                if coffeeInFilter == 0 {
-                    print("Please, add coffee")
-                }
+            if coffeeInFilter == 0 {
+                resultMessage = "Please, add some coffee"
             }
         }
+        return resultMessage
+    }
+    
+    func makeCappuccino() -> String {
+        var resultMessage: String = ""
+        if (milkInTube >= 200) && (coffeeInFilter) >= 1 {
+            resultMessage = "Your cappuccino is ready, enjoy!"
+        }
+        else {
+            if milkInTube < 200 {
+                resultMessage = "Please, add some milk"
+            }
+            if coffeeInFilter == 0 {
+                resultMessage = "Please, add some coffee"
+            }
+        }
+        return resultMessage
+    }
+    
+    func makeLatte() -> String {
+        var resultMessage: String = ""
+        if (milkInTube >= 400) && (coffeeInFilter) >= 1 {
+            resultMessage = "Your latte is ready, enjoy!"
+        }
+        else {
+            if milkInTube < 400 {
+                resultMessage = "Please, add double milk"
+            }
+            if coffeeInFilter == 0 {
+                resultMessage = "Please, add some coffee"
+            }
+        }
+        return resultMessage
+    }
 }
