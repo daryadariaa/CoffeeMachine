@@ -12,6 +12,7 @@
 		145CA4BB220F5104009FA75B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145CA4B9220F5104009FA75B /* Main.storyboard */; };
 		145CA4BD220F5105009FA75B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145CA4BC220F5105009FA75B /* Assets.xcassets */; };
 		145CA4C0220F5105009FA75B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145CA4BE220F5105009FA75B /* LaunchScreen.storyboard */; };
+		145CA4C8220F511C009FA75B /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145CA4C7220F511C009FA75B /* CoffeeMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		145CA4BC220F5105009FA75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145CA4BF220F5105009FA75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145CA4C1220F5105009FA75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145CA4C7220F511C009FA75B /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				145CA4B5220F5104009FA75B /* AppDelegate.swift */,
 				145CA4B7220F5104009FA75B /* ViewController.swift */,
+				145CA4C7220F511C009FA75B /* CoffeeMachine.swift */,
 				145CA4B9220F5104009FA75B /* Main.storyboard */,
 				145CA4BC220F5105009FA75B /* Assets.xcassets */,
 				145CA4BE220F5105009FA75B /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				145CA4B8220F5104009FA75B /* ViewController.swift in Sources */,
 				145CA4B6220F5104009FA75B /* AppDelegate.swift in Sources */,
+				145CA4C8220F511C009FA75B /* CoffeeMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
